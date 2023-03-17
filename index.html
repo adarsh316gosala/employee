@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        
+        table{
+            border: 1px solid black;border-collapse: collapse;
+            width: 200px;
+            height: 200px;
+            font-size: 30px;
+            
+        }
+        td,th{
+              border: 1px solid blue;
+            
+
+    
+        }
+        th{
+            text-transform: uppercase;
+            color: red;
+        
+
+        }
+        td{
+      text-align: center;
+         color: green;
+        }
+        #s{
+            background-color: blue;
+            width: 100px;
+            border-radius: 4px;
+            font-size: 20px;
+            box-shadow: 1px 1px 2px gray;
+            transition: 1s;
+        }
+        #e{
+            width: 200px;
+            height: 25px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>rollno</th>
+        </tr>
+        <tr>
+            <td>adarsh</td>
+            <td id="a"></td>
+        </tr>
+        <tr>
+            <td>rahul</td>
+            <td id="b"></td>
+
+        </tr>
+        <tr>
+            
+                <td>naveen</td>
+                <td id="c"></td>
+        
+        </tr>
+    </table>
+    <br><br>
+    <input type="text" placeholder="Enter roll no " id="e"> 
+    <br><br>
+    <input type="button" value="Enter" onclick="fun()" id="s">
+    <br><br>
+    <h1 id="h" style="color:blue"></h1>
+    <script>
+        document.getElementById("a").innerHTML=12
+        document.getElementById("b").innerHTML=14
+        document.getElementById("c").innerHTML=18
+
+
+function fun()
+{
+
+
+        var a=document.getElementById("e").value
+        var b=document.getElementById("e").value
+        var c=document.getElementById("e").value
+
+      
+            if(a==12)
+            {
+                document.getElementById("h").innerHTML="name:adarsh,<br>stream:mech<br>mobile:8688574533<br>salary:30000/-"
+                
+            }
+            else if(b==14){
+                document.getElementById("h").innerHTML="name:rahul,<br>strem:Ece,<br>mobile:9867545431<br>salary:25000/-"
+            }
+            else if(c==18){
+                document.getElementById("h").innerHTML="name:naveen,<br>stream:Cse,<br>mobile:6302324587<br>salary:34000/-"
+
+            }
+            else{
+                document.getElementById("h").innerHTML="invalid data...."
+            }
+        
+}
+    </script>
+    </center>
+</body>
+</html>
